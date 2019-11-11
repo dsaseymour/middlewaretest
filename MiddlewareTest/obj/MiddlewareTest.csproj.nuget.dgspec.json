@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/danny/Repos/MiddlewareTest/MiddlewareTest/MiddlewareTest.csproj": {}
+  },
+  "projects": {
+    "/Users/danny/Repos/MiddlewareTest/MiddlewareTest/MiddlewareTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/danny/Repos/MiddlewareTest/MiddlewareTest/MiddlewareTest.csproj",
+        "projectName": "MiddlewareTest",
+        "projectPath": "/Users/danny/Repos/MiddlewareTest/MiddlewareTest/MiddlewareTest.csproj",
+        "packagesPath": "/Users/danny/.nuget/packages/",
+        "outputPath": "/Users/danny/Repos/MiddlewareTest/MiddlewareTest/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/danny/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
