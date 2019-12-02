@@ -15,7 +15,7 @@ namespace MiddlewareTest.Controllers
         public ActionResult<IEnumerable<string>> Get()
         {
             throw new Exception("This is America");
-            return new string[] { "value1", "value2" };
+           // return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5
