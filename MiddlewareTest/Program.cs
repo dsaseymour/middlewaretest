@@ -18,11 +18,8 @@ namespace MiddlewareTest
         public static int Main(string[] args)
         {
             //setup config begins
-            var currentEnv = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
             var configuration = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json")
-                .AddJsonFile($"appsettings.{currentEnv}.json", optional: true)
-                .AddEnvironmentVariables()
                 .Build();
             //setup config ends
 

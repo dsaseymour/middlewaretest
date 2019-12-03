@@ -3,7 +3,6 @@
 /Users/danny/Repos/MiddlewareTest/MiddlewareTest/bin/Debug/netcoreapp2.2/MiddlewareTest.runtimeconfig.dev.json
 /Users/danny/Repos/MiddlewareTest/MiddlewareTest/bin/Debug/netcoreapp2.2/MiddlewareTest.dll
 /Users/danny/Repos/MiddlewareTest/MiddlewareTest/bin/Debug/netcoreapp2.2/MiddlewareTest.pdb
-/Users/danny/Repos/MiddlewareTest/MiddlewareTest/obj/Debug/netcoreapp2.2/MiddlewareTest.csprojAssemblyReference.cache
 /Users/danny/Repos/MiddlewareTest/MiddlewareTest/obj/Debug/netcoreapp2.2/MiddlewareTest.csproj.CoreCompileInputs.cache
 /Users/danny/Repos/MiddlewareTest/MiddlewareTest/obj/Debug/netcoreapp2.2/MiddlewareTest.RazorAssemblyInfo.cache
 /Users/danny/Repos/MiddlewareTest/MiddlewareTest/obj/Debug/netcoreapp2.2/MiddlewareTest.RazorAssemblyInfo.cs
