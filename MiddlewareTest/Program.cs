@@ -15,7 +15,7 @@ namespace MiddlewareTest
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static int Main(string[] args)
         {
             //setup config begins
             var currentEnv = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
@@ -35,7 +35,7 @@ namespace MiddlewareTest
             try
             {
                 Log.Information("Starting web host");
-                BuildWebHost(args).Run();
+                CreateWebHostBuilder(args).Build().Run();
                 return 0;
             }
             catch (Exception ex)
@@ -51,10 +51,9 @@ namespace MiddlewareTest
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-         WebHost.CreateDefaultBuilder(args)
-               .UseStartup<Startup>()
-               .UseSerilog()
-                .Build();
-          ;
+           WebHost.CreateDefaultBuilder(args)
+            .UseStartup<Startup>()
+               .UseSerilog();
+          
     }
 }
