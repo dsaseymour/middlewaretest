@@ -15,7 +15,7 @@ namespace MiddlewareTest
 {
     public class Program
     {
-        public static int Main(string[] args)
+        public static void Main(string[] args)
         {
             //setup config begins
             var configuration = new ConfigurationBuilder()
@@ -31,14 +31,14 @@ namespace MiddlewareTest
 
             try
             {
-                Log.Information("Starting web host");
+                Log.Information("Application Starting Up");
                 CreateWebHostBuilder(args).Build().Run();
-                return 0;
+                
             }
             catch (Exception ex)
             {
-                Log.Fatal(ex, "Web Host terminated unexpectedly");
-                return 1;
+                Log.Fatal(ex, "Application Failed to Start");
+                
             }
             finally
             {
