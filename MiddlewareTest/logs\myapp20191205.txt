@@ -222,3 +222,121 @@ System.Exception: This is America
 2019-12-05 06:54:27.705 -05:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 48.1301 ms
 2019-12-05 06:54:27.758 -05:00 [INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 0.2550 ms
 2019-12-05 06:54:27.974 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 500.0905 ms
+2019-12-05 07:01:39.822 -05:00 [DBG] Failed to locate the development https certificate at 'null'.
+2019-12-05 07:01:39.942 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: FEF0A8B1EE2184FF5E558D9A7F77F543406F1DF7)
+2019-12-05 07:01:40.274 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2019-12-05 07:01:40.360 -05:00 [DBG] 1 candidate(s) found for the request path '/api/values'
+2019-12-05 07:01:40.361 -05:00 [DBG] Endpoint 'MiddlewareTest.Controllers.ValuesController.Get (MiddlewareTest)' with route pattern 'api/Values' is valid for the request path '/api/values'
+2019-12-05 07:01:41.238 -05:00 [FTL] An unhandled exception has occurred while executing the request. Url: https://localhost:5001/api/values. Request Data: Method: GET
+
+System.Exception: This is America
+   at MiddlewareTest.Controllers.ValuesController.Get() in /Users/danny/Repos/MiddlewareTest/MiddlewareTest/Controllers/ValuesController.cs:line 22
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at MiddlewareTest.Controllers.ExceptionMiddleware.Invoke(HttpContext context) in /Users/danny/Repos/MiddlewareTest/MiddlewareTest/Controllers/ExceptionMiddleware.cs:line 41
+2019-12-05 07:01:41.392 -05:00 [ERR] HTTP GET /api/values responded 500 in 1108.0547 ms
+2019-12-05 07:01:42.672 -05:00 [DBG] 1 candidate(s) found for the request path '/api/values'
+2019-12-05 07:01:42.673 -05:00 [DBG] Endpoint 'MiddlewareTest.Controllers.ValuesController.Get (MiddlewareTest)' with route pattern 'api/Values' is valid for the request path '/api/values'
+2019-12-05 07:01:43.070 -05:00 [DBG] No candidates found for the request path '/favicon.ico'
+2019-12-05 07:01:43.071 -05:00 [INF] HTTP GET /favicon.ico responded 404 in 21.8615 ms
+2019-12-05 07:01:43.070 -05:00 [FTL] An unhandled exception has occurred while executing the request. Url: https://localhost:5001/api/values. Request Data: Method: GET
+
+System.Exception: This is America
+   at MiddlewareTest.Controllers.ValuesController.Get() in /Users/danny/Repos/MiddlewareTest/MiddlewareTest/Controllers/ValuesController.cs:line 22
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at MiddlewareTest.Controllers.ExceptionMiddleware.Invoke(HttpContext context) in /Users/danny/Repos/MiddlewareTest/MiddlewareTest/Controllers/ExceptionMiddleware.cs:line 41
+2019-12-05 07:01:43.077 -05:00 [ERR] HTTP GET /api/values responded 500 in 404.8140 ms
+2019-12-05 07:02:08.805 -05:00 [DBG] Failed to locate the development https certificate at 'null'.
+2019-12-05 07:02:08.919 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: FEF0A8B1EE2184FF5E558D9A7F77F543406F1DF7)
+2019-12-05 07:02:09.185 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2019-12-05 07:02:09.271 -05:00 [DBG] 1 candidate(s) found for the request path '/api/values'
+2019-12-05 07:02:09.272 -05:00 [DBG] Endpoint 'MiddlewareTest.Controllers.ValuesController.Get (MiddlewareTest)' with route pattern 'api/Values' is valid for the request path '/api/values'
+2019-12-05 07:02:10.120 -05:00 [FTL] An unhandled exception has occurred while executing the request. Url: https://localhost:5001/api/values. Request Data: Method: GET
+
+System.Exception: This is America
+   at MiddlewareTest.Controllers.ValuesController.Get() in /Users/danny/Repos/MiddlewareTest/MiddlewareTest/Controllers/ValuesController.cs:line 22
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at MiddlewareTest.Controllers.ExceptionMiddleware.Invoke(HttpContext context) in /Users/danny/Repos/MiddlewareTest/MiddlewareTest/Controllers/ExceptionMiddleware.cs:line 41
+2019-12-05 07:02:10.267 -05:00 [ERR] HTTP GET /api/values responded 500 in 1072.7666 ms
+2019-12-05 07:02:11.555 -05:00 [DBG] 1 candidate(s) found for the request path '/api/values'
+2019-12-05 07:02:11.555 -05:00 [DBG] Endpoint 'MiddlewareTest.Controllers.ValuesController.Get (MiddlewareTest)' with route pattern 'api/Values' is valid for the request path '/api/values'
+2019-12-05 07:02:11.791 -05:00 [DBG] No candidates found for the request path '/favicon.ico'
+2019-12-05 07:02:11.792 -05:00 [INF] HTTP GET /favicon.ico responded 404 in 1.8673 ms
+2019-12-05 07:02:11.941 -05:00 [FTL] An unhandled exception has occurred while executing the request. Url: https://localhost:5001/api/values. Request Data: Method: GET
+
+System.Exception: This is America
+   at MiddlewareTest.Controllers.ValuesController.Get() in /Users/danny/Repos/MiddlewareTest/MiddlewareTest/Controllers/ValuesController.cs:line 22
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at MiddlewareTest.Controllers.ExceptionMiddleware.Invoke(HttpContext context) in /Users/danny/Repos/MiddlewareTest/MiddlewareTest/Controllers/ExceptionMiddleware.cs:line 41
+2019-12-05 07:02:11.945 -05:00 [ERR] HTTP GET /api/values responded 500 in 390.0485 ms
+2019-12-05 07:02:15.727 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 59.7451 ms
+2019-12-05 07:02:16.268 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 301.5305 ms
+2019-12-05 07:02:17.321 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 45.9787 ms
+2019-12-05 07:02:17.600 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 45.8557 ms

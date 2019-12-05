@@ -2,3 +2,5 @@
 {"Timestamp":"2019-12-05T06:30:46.6455580-05:00","Level":"Information","MessageTemplate":"Application Starting Up","Properties":{"MachineName":"admins-MacBook-Pro","ProcessId":12358,"ThreadId":1,"Application":"Chillflix"}}
 {"Timestamp":"2019-12-05T06:41:43.7160710-05:00","Level":"Information","MessageTemplate":"Application Starting Up","Properties":{"MachineName":"admins-MacBook-Pro","ProcessId":12421,"ThreadId":1,"Application":"Chillflix"}}
 {"Timestamp":"2019-12-05T06:54:14.5123550-05:00","Level":"Information","MessageTemplate":"Application Starting Up","Properties":{"MachineName":"admins-MacBook-Pro","ProcessId":12437,"ThreadId":1,"Application":"Chillflix"}}
+{"Timestamp":"2019-12-05T07:01:37.8849130-05:00","Level":"Information","MessageTemplate":"Application Starting Up","Properties":{"MachineName":"admins-MacBook-Pro","ProcessId":12595,"ThreadId":1,"Application":"Chillflix"}}
+{"Timestamp":"2019-12-05T07:02:07.0498130-05:00","Level":"Information","MessageTemplate":"Application Starting Up","Properties":{"MachineName":"admins-MacBook-Pro","ProcessId":12599,"ThreadId":1,"Application":"Chillflix"}}
