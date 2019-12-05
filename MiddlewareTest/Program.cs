@@ -25,7 +25,7 @@ namespace MiddlewareTest
 
             //configure logger begins
             Log.Logger = new LoggerConfiguration()
-            .ReadFrom.Configuration(configuration)
+                .ReadFrom.Configuration(configuration)
             .CreateLogger();
             //configure logger ends
 
