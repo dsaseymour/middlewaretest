@@ -12,6 +12,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using MiddlewareTest.Controllers;
 using Serilog;
+using Microsoft.OpenApi.Models;
 
 namespace MiddlewareTest
 {
@@ -29,6 +30,22 @@ namespace MiddlewareTest
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddMvcCore().AddXmlSerializerFormatters().AddJsonFormatters();
+            //Register Swagger Generator, Define Swagger Documents
+            services.AddSwaggerGen((options) => {
+                options.SwaggerDoc(
+                    "v1",
+                    new OpenApiInfo {
+                        Title="Chillflix API",
+                        Version="v1",
+                        Description="Chillflix an ASP.NET Core Application",
+                        Contact = new OpenApiContact
+                        {
+                            Name = "Danny Seymour",
+                            Url = new Uri("https://dannyseymour.me"),
+                        }
+                    }
+                    );
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +63,13 @@ namespace MiddlewareTest
             app.UseSerilogRequestLogging();
             app.ConfigureCustomExceptionMiddleware();
             app.UseHttpsRedirection();
+            //Enable middleware to serve generated Swagger as a JSON endpoint
+            app.UseSwagger();
+            //Enable middleware to server swagger ui
+            //Specify Swagger JSON Endpoint
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json","ChillFlix APIV1");
+            });
             app.UseMvc();
         }
     }
