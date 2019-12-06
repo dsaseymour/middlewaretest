@@ -100,3 +100,150 @@ System.Exception: This is America
    at MiddlewareTest.Controllers.ExceptionMiddleware.Invoke(HttpContext context) in /Users/danny/Repos/MiddlewareTest/MiddlewareTest/Controllers/ExceptionMiddleware.cs:line 37
 12/06/2019 06:29:40 HTTP "GET" "/api/values" responded 500 in 337.4362 ms
 12/06/2019 06:29:40 HTTP "GET" "/favicon.ico" responded 404 in 0.5818 ms
+12/06/2019 06:55:20 Application Starting Up
+12/06/2019 06:55:23 I'm in the Get Method Hey
+12/06/2019 06:55:24 An unhandled exception has occurred while executing the request. Url: https://localhost:5001/api/values. Request Data: Method: GET
+
+System.Exception: This is America
+   at MiddlewareTest.Controllers.ValuesController.Get() in /Users/danny/Repos/MiddlewareTest/MiddlewareTest/Controllers/ValuesController.cs:line 27
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at MiddlewareTest.Controllers.ExceptionMiddleware.Invoke(HttpContext context) in /Users/danny/Repos/MiddlewareTest/MiddlewareTest/Controllers/ExceptionMiddleware.cs:line 37
+12/06/2019 06:55:24 HTTP "GET" "/api/values" responded 500 in 1188.2820 ms
+12/06/2019 06:55:25 I'm in the Get Method Hey
+12/06/2019 06:55:25 An unhandled exception has occurred while executing the request. Url: https://localhost:5001/api/values. Request Data: Method: GET
+
+System.Exception: This is America
+   at MiddlewareTest.Controllers.ValuesController.Get() in /Users/danny/Repos/MiddlewareTest/MiddlewareTest/Controllers/ValuesController.cs:line 27
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at MiddlewareTest.Controllers.ExceptionMiddleware.Invoke(HttpContext context) in /Users/danny/Repos/MiddlewareTest/MiddlewareTest/Controllers/ExceptionMiddleware.cs:line 37
+12/06/2019 06:55:25 HTTP "GET" "/api/values" responded 500 in 405.1843 ms
+12/06/2019 06:55:25 HTTP "GET" "/favicon.ico" responded 404 in 22.0261 ms
+12/06/2019 06:55:30 HTTP "GET" "/favicon.ico" responded 404 in 0.3347 ms
+12/06/2019 06:55:30 I'm in the Get Method Hey
+12/06/2019 06:55:30 An unhandled exception has occurred while executing the request. Url: https://localhost:5001/api/values. Request Data: Method: GET
+
+System.Exception: This is America
+   at MiddlewareTest.Controllers.ValuesController.Get() in /Users/danny/Repos/MiddlewareTest/MiddlewareTest/Controllers/ValuesController.cs:line 27
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at MiddlewareTest.Controllers.ExceptionMiddleware.Invoke(HttpContext context) in /Users/danny/Repos/MiddlewareTest/MiddlewareTest/Controllers/ExceptionMiddleware.cs:line 37
+12/06/2019 06:55:30 HTTP "GET" "/api/values" responded 500 in 364.2098 ms
+12/06/2019 06:55:31 HTTP "GET" "/favicon.ico" responded 404 in 25.6657 ms
+12/06/2019 06:55:31 I'm in the Get Method Hey
+12/06/2019 06:55:31 An unhandled exception has occurred while executing the request. Url: https://localhost:5001/api/values. Request Data: Method: GET
+
+System.Exception: This is America
+   at MiddlewareTest.Controllers.ValuesController.Get() in /Users/danny/Repos/MiddlewareTest/MiddlewareTest/Controllers/ValuesController.cs:line 27
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at MiddlewareTest.Controllers.ExceptionMiddleware.Invoke(HttpContext context) in /Users/danny/Repos/MiddlewareTest/MiddlewareTest/Controllers/ExceptionMiddleware.cs:line 37
+12/06/2019 06:55:31 AdaptedPipeline.WriteOutputAsync
+System.IO.IOException: The encryption operation failed, see inner exception. ---> System.ComponentModel.Win32Exception: Cannot allocate memory
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStreamInternal.<WriteAsyncInternal>g__ExitWriteAsync|35_0[TWriteAdapter](ValueTask task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Adapter.Internal.AdaptedPipeline.WriteOutputAsync(Stream stream)
+12/06/2019 06:55:31 HTTP "GET" "/api/values" responded 500 in 442.1310 ms
+12/06/2019 06:55:33 HTTP "GET" "/api/swagger" responded 404 in 25.7409 ms
+12/06/2019 06:55:33 HTTP "GET" "/favicon.ico" responded 404 in 0.0654 ms
+12/06/2019 06:55:38 HTTP "GET" "/api/swagger" responded 404 in 51.4727 ms
+12/06/2019 06:55:39 I'm in the Get Method Hey
+12/06/2019 06:55:39 HTTP "GET" "/favicon.ico" responded 404 in 0.5521 ms
+12/06/2019 06:55:39 An unhandled exception has occurred while executing the request. Url: https://localhost:5001/api/values. Request Data: Method: GET
+
+System.Exception: This is America
+   at MiddlewareTest.Controllers.ValuesController.Get() in /Users/danny/Repos/MiddlewareTest/MiddlewareTest/Controllers/ValuesController.cs:line 27
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at MiddlewareTest.Controllers.ExceptionMiddleware.Invoke(HttpContext context) in /Users/danny/Repos/MiddlewareTest/MiddlewareTest/Controllers/ExceptionMiddleware.cs:line 37
+12/06/2019 06:55:39 HTTP "GET" "/api/values" responded 500 in 441.4752 ms
+12/06/2019 06:55:39 HTTP "GET" "/" responded 404 in 43.5399 ms
+12/06/2019 06:55:40 HTTP "GET" "/" responded 404 in 0.1444 ms
+12/06/2019 06:55:40 HTTP "GET" "/favicon.ico" responded 404 in 0.0832 ms
+12/06/2019 06:55:41 HTTP "GET" "/swagger/index.html" responded 200 in 47.6643 ms
+12/06/2019 06:55:41 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 332.1990 ms
+12/06/2019 06:55:42 HTTP "GET" "/swagger/index.html" responded 200 in 0.5612 ms
+12/06/2019 06:55:42 HTTP "GET" "/swagger/index.html" responded 200 in 0.5749 ms
+12/06/2019 06:55:42 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 86.0031 ms
+12/06/2019 06:55:42 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 65.7200 ms
