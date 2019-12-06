@@ -1,16 +1,14 @@
 ﻿<Properties StartupConfiguration="{063E27E3-E3EC-4E9F-A858-F9D0AEF9992D}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Logs/log-20191206.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/ProfileController.cs">
     <Files>
-      <File FileName="Startup.cs" Line="51" Column="1" />
-      <File FileName="Controllers/ValuesController.cs" Line="23" Column="1" />
-      <File FileName="Program.cs" Line="32" Column="14" />
-      <File FileName="Controllers/ExceptionMiddleware.cs" Line="103" Column="2" />
-      <File FileName="Controllers/CustomExceptionMiddleware.cs" Line="7" Column="10" />
-      <File FileName="Logs/log-20191205.json" Line="1" Column="1" />
-      <File FileName="Logs/log-20191205.log" Line="19" Column="20" />
-      <File FileName="Controllers/ExceptionMiddlewareExtensions.cs" Line="1" Column="1" />
-      <File FileName="Logs/log-20191206.json" Line="4" Column="1" />
-      <File FileName="Logs/log-20191206.log" Line="1" Column="1" />
+      <File FileName="Controllers/ProfileController.cs" Line="8" Column="81" />
+      <File FileName="Controllers/UserController.cs" Line="18" Column="1" />
+      <File FileName="Controllers/PostController.cs" Line="18" Column="20" />
+      <File FileName="Controllers/MediaController.cs" Line="18" Column="21" />
+      <File FileName="Controllers/PhotosController.cs" Line="18" Column="22" />
+      <File FileName="Controllers/AuthController.cs" Line="20" Column="10" />
+      <File FileName="Controllers/ValuesController.cs" Line="18" Column="10" />
+      <File FileName="Controllers/ExceptionMiddleware.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,10 +16,10 @@
           <Node name="MiddlewareTest" expanded="True">
             <Node name="MiddlewareTest" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="Logs" expanded="True">
-                <Node name="log-20191206.json" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="ValuesController.cs" selected="True" />
               </Node>
+              <Node name="Logs" expanded="True" />
               <Node name="Properties" expanded="True" />
             </Node>
           </Node>
