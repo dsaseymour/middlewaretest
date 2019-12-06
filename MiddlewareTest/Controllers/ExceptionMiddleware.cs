@@ -21,17 +21,13 @@ namespace MiddlewareTest.Controllers
         private readonly RequestDelegate next;
         private readonly IActionResultExecutor<ObjectResult> executor;
         private static readonly ActionDescriptor EmptyActionDescriptor = new ActionDescriptor();
+        private readonly ILogger<ExceptionMiddleware> _logger;
 
-        public ExceptionMiddleware(RequestDelegate next, IActionResultExecutor<ObjectResult> executor, ILoggerFactory loggerFactory)
+        public ExceptionMiddleware(RequestDelegate next, IActionResultExecutor<ObjectResult> executor, ILogger<ExceptionMiddleware> logger)
         {
             this.next = next;
             this.executor = executor;
-
-            Log.Logger = new LoggerConfiguration()
-               .MinimumLevel.Debug()
-               .WriteTo.Console()
-               .WriteTo.File("logs\\myapp.txt", rollingInterval: RollingInterval.Day)
-                .CreateLogger();
+            _logger = logger;
         }
 
         public async Task Invoke(HttpContext context)
@@ -42,7 +38,7 @@ namespace MiddlewareTest.Controllers
             }
             catch (Exception ex)
             {
-                Log.Fatal(ex, $"An unhandled exception has occurred while executing the request. Url: {context.Request.GetDisplayUrl()}. Request Data: " + GetRequestData(context));
+                _logger.LogError(ex, $"An unhandled exception has occurred while executing the request. Url: {context.Request.GetDisplayUrl()}. Request Data: " + GetRequestData(context));
 
                 if (context.Response.HasStarted)
                 {

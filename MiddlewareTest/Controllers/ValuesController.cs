@@ -11,14 +11,19 @@ namespace MiddlewareTest.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private readonly ILogger<ValuesController> _logger;
 
         public ValuesController(ILogger<ValuesController> logger) {
+            _logger = logger;
         }
+
+
 
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            _logger.LogInformation("I'm in the Get Method Hey");
             throw new Exception("This is America");
            // return new string[] { "value1", "value2" };
         }

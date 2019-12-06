@@ -16,3 +16,4 @@
 /Users/danny/Repos/MiddlewareTest/MiddlewareTest/bin/Debug/netcoreapp2.2/test.json
 /Users/danny/Repos/MiddlewareTest/MiddlewareTest/obj/Debug/netcoreapp2.2/MiddlewareTest.csprojAssemblyReference.cache
 /Users/danny/Repos/MiddlewareTest/MiddlewareTest/bin/Debug/netcoreapp2.2/Logs/log-20191205.json
+/Users/danny/Repos/MiddlewareTest/MiddlewareTest/bin/Debug/netcoreapp2.2/Logs/log-20191206.json
